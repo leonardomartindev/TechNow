@@ -28,6 +28,10 @@ export const ProductContainer = styled.div`
     @media(max-width: 900px){
         width: 85vw;
     }
+    @media(max-width: 400px){
+        height: 80vh;
+        width: auto;
+    }
 
 `
 export const ProductImg = styled.img`
@@ -64,6 +68,9 @@ export const Title = styled.h1`
     margin-bottom: 1rem;
     text-align:center;
     font-size: 3rem;
+    @media(max-width: 400px){
+        font-size: 2.5rem;
+    }
 `
 export const Description = styled.p`
     font-size: 1.6rem;
@@ -72,7 +79,7 @@ export const Description = styled.p`
         width: 100%;
     }
     @media(max-width: 500px){
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 ` 
 export const Price = styled.p`

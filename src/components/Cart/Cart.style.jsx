@@ -17,7 +17,7 @@ export const Sidebar = styled.div`
         width: ${(props)=> (props.cartIsOpen ? '50vw' : '0')}
     }
     @media(max-width: 600px){
-        width: ${(props)=> (props.cartIsOpen ? '70vw' : '0')}
+        width: ${(props)=> (props.cartIsOpen ? '90vw' : '0')}
     }
 `
 export const Card = styled.div`
@@ -78,9 +78,18 @@ export const Trash = styled.div`
     color: #FD3030;
     display:none;
     cursor:pointer;
+
+    
     ${Card}:hover & {
         display:flex;
    }
+   
+   @media (max-width: 700px) {
+    display: flex;
+    ${Card}:hover & {
+        display: flex; 
+    }
+}
 `
 export const CloseCart = styled.div`
    position:absolute;

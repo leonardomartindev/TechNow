@@ -40,7 +40,8 @@ export const Input = styled.input`
     padding-left: 1.5rem;
     outline:none;
     @media(max-width: 700px){
-        width: 70vw;
+        width: 100vw;
+        margin-left: 1rem;
 
     }
 

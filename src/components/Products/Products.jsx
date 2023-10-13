@@ -37,7 +37,6 @@ export default function Products(props) {
         setSlidePerView(5);
       }
     }
-    
     handleResize();
 
     window.addEventListener("resize", handleResize)
@@ -55,9 +54,11 @@ export default function Products(props) {
       <Description>{props.description}</Description>
 
       <Swiper
+        A11y
         slidesPerView={slidePerView}
         pagination={{ clickable: true }}
         navigation
+        allowTouchMove={true}
       >
         <CardsContainer>
           {first20Products.map((product) => (

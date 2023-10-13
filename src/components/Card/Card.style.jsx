@@ -77,9 +77,17 @@ export const AddInCart = styled.button`
     margin: 8px 10px;
     font-size: 2.6rem;
     cursor: pointer;
-
+    
     ${CardContainer}:hover & {
         display:flex;
-   }
-`
+    }
+    
+    @media (max-width: 700px) {
+        display: flex;
+        ${CardContainer}:hover & {
+            display: flex; 
+        }
+    }
+`;
+
 
